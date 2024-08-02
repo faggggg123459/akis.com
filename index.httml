@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akis.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header id="top">
+            <div class="logo">
+                <img src="data:image/png;base64,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"     width="150px"  "Логотип Akis.com" >
+            </div>
+            <h1>Akis.com</h1>
+            <p>Ласкаво просимо!</p>
+        </header>
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="#welcome">Вітання</a></li>
+                    <li><a href="#zel-teatr">Зелений театр</a></li>
+                    <li><a href="#lybid">Либідь</a></li>
+                    <li><a href="#brovarsky">Броварський</a></li>
+                    <li><a href="#metrobud">Метробуд на Троєщині</a></li>
+                </ul>
+                <div class="indicator"></div>
+            </nav>
+            <div class="welcome-message" id="welcome">
+                <p>Ласкаво просимо! Дякуємо, що завітали на наш сайт. Тут ви знайдете все про андерграундне життя Києва.
+                    Залишайтеся з нами для найсвіжіших новин та цікавих подій!</p>
+            </div>
+            <h2>Андерграундні міста Києва</h2>
+            <div class="cards">
+                <div class="card" id="zel-teatr">
+                    <div class="card-image">
+                        <img src="https://tykyiv.com/media/1_%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8_%D1%82%D0%B5%D0%B0%D1%82%D1%80.png" width="100px" alt="Зелений театр">
+                    </div>
+                    <p>Зелений театр — театр під відкритим небом у Києві, відкритий у 1910 р. На сценах Камерного театру нової Петроградської філармонії У.С.С. співають 3-4 рази на рік. В театрі був літній кінний клуб.</p>
+                </div>
+                <div class="card" id="lybid">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/%D0%9B%D0%B8%D0%B1%D1%96%D0%B4%D1%8C_%D0%B1%D1%96%D0%BB%D1%8F_%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BF%D0%BB%D0%BE%D1%89%D1%96_%D0%B2_%D0%9A%D0%B8%D1%94%D0%B2%D1%96.jpg/1200px-%D0%9B%D0%B8%D0%B1%D1%96%D0%B4%D1%8C_%D0%B1%D1%96%D0%BB%D1%8F_%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BF%D0%BB%D0%BE%D1%89%D1%96_%D0%B2_%D0%9A%D0%B8%D1%94%D0%B2%D1%96.jpg" width="100px" alt="Либідь">
+                    </div>
+                    <p>Либідь — річка в Києві, права притока Дніпра, довжина — 17 км, площа басейну — 69 км². Від Хрещатика до Володимирської річка тече у закритому колекторі. Знаходиться на території Києва.</p>
+                </div>
+                <div class="card" id="brovarsky">
+                    <div class="card-image">
+                        <img src="https://glavcom.ua/img/article/8217/82_main-v1644826045.png" width="100px" alt="Броварський">
+                    </div>
+                    <p>У Києві на вулиці Броварський, за 1,5 км знаходиться система військових заповітів "Київський анклав". Це технічні склади, резервуари та бомбосховища.</p>
+                </div>
+                <div class="card" id="metrobud">
+                    <div class="card-image">
+                        <img src="https://img.tsn.ua/cached/088/tsn-044a03ab1c6615c0753d2de60e24b711/thumbs/428x268/60/a3/e3f595b37bcc7b2e3a7ceca49b0aa360.jpeg" width="100px" alt="Метробуд на Троєщині">
+                    </div>
+                    <p>Метробуд на Троєщині — важливий інфраструктурний проект, що включає в себе систему тунелів і станцій, які обслуговують цей район Києва.</p>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-item">
+                    <a href="#">Akis.com</a>
+                </div>
+                <div class="footer-item">
+                    <a href="#top">Піднятися на верх</a>
+                </div>
+                <div class="footer-item">
+                    <a href="https://t.me/Akis_com567" target="_blank">Telegram Канал</a>
+
+                    <p>Цей телеграм канал створено для відгуків та пропозицій.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>
