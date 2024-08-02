@@ -73,6 +73,215 @@
                     <p>Цей телеграм канал створено для відгуків та пропозицій.</p>
                 </div>
             </footer>
+            <style>
+                body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #D4C2A5;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #F7F4E9;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #C4A484;
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+header .logo-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #E0D3C6;
+    border-radius: 15%;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #C4A484;
+    padding: 10px 0;
+    position: relative;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F7F4E9;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #8B6F52;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #8B6F52;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: left 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:focus + .indicator, nav ul li a:hover + .indicator {
+    left: calc(50% + 100px); /* Adjust the value based on the link position */
+    transform: translateY(-10px);
+}
+
+.welcome-message {
+    background-color: #E9DBA6;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+main {
+    text-align: center;
+}
+
+main h2 {
+    background-color: #C4A484;
+    padding: 10px;
+    border-radius: 5px;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: #E9DBA6;
+    width: 22%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: popIn 1s ease-in-out;
+    transition: transform 0.3s;
+}
+
+@keyframes popIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card .card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card p {
+    font-size: 0.9em;
+    text-align: left;
+    color: #333;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #C4A484;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.footer-item a {
+    color: #C4A484;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-item a:hover {
+    color: #8B6F52;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+
+
+
+                
+            </style>
         </main>
     </div>
 </body>
